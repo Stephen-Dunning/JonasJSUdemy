@@ -92,3 +92,6 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 //lecture 75 'Manipulating CSS styles' is below.
+
+/*The work to turn the screen green ona win and to expand the secret number box on a win is a matter of DOMmanipulation. The work no longer feels new to me, and soon I know I will be creating projects of my own and making them work right.
+ */
