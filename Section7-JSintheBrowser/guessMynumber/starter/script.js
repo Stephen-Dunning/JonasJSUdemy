@@ -40,11 +40,11 @@ document.querySelector('.check').addEventListener('click', function () {
 really we need to set up defining the secret number first. We must do that outside the hamdler function, to avoid chaos.
 */
 
-const secretNumber = Math.trunc(Math.random() * 20) + 1; // temporarily display the secret number, for dev purposes.
+let secretNumber = Math.trunc(Math.random() * 20) + 1; // temporarily display the secret number, for dev purposes.
 let score = 20; //declaring a score variable
 
 //document.querySelector('.number').textContent = secretNumber;
-//this displays secret number in box -
+//this displays secret number in box - hidden by default.
 
 //the below builds functionality for the check button and window.
 document.querySelector('.check').addEventListener('click', function () {
@@ -88,10 +88,28 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   }
-  // end of lecture 74 'Implementing the game logic. (it took a little while")
+
+  // lecture 76 is below
+  document.querySelector('.again').addEventListener;
+  'click',
+    function () {
+      score = 20;
+      secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+      document.querySelector('.message').textContent = 'Start guessing...';
+      document.querySelector('.score').textContent = 'score:';
+      document.querySelector('.number').textContent = '?';
+      document.querySelector('.guess').value = '';
+
+      document.querySelector('.body').style.backgroundColor = '#222';
+      document.querySelector('.number').style.width = '15rem';
+    };
 });
+// end of lecture 74 'Implementing the game logic. (it took a little while")
 
 //lecture 75 'Manipulating CSS styles' is below.
+
+// lecture 76 with a coding challenge to get the 'again' //button working proerly is above.
 
 /*The work to turn the screen green ona win and to expand the secret number box on a win is a matter of DOMmanipulation. The work no longer feels new to me, and soon I know I will be creating projects of my own and making them work right.
  */
