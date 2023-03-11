@@ -41,6 +41,7 @@ really we need to set up defining the secret number first. We must do that outsi
 */
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1; // temporarily display the secret number, for dev purposes.
+let highscore = 0;
 let score = 20; //declaring a score variable
 
 //document.querySelector('.number').textContent = secretNumber;
@@ -64,6 +65,13 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = '#60b347';
     //number goes bold on a win
     document.querySelector('.number').style.width = '30rem';
+    //high score calculation and display
+    if (score > highscore) {
+      highscore = score;
+      document.querySelector('.highscore').
+      textContent = highscore;
+    }
+
     //displays secret number in bold in the box
 
     //when guess is too high
