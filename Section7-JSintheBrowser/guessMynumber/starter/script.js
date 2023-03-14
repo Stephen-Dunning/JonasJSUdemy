@@ -72,6 +72,16 @@ document.querySelector('.check').addEventListener('click', function () {
       textContent = highscore;
     }
 
+    /*
+    Lesson 78 - Refactoring our code.
+    example of refactoring, or minimizing the code would be to delete one of these two code blocks and just have one determining of guess is higher or lower han secret number and then outputting he string required.
+    
+    Using != instead of > or < takes it down to one code block, and the : operator
+    easily replaces the else if requirement to output the two diffrent stings.
+
+
+    */
+
     //displays secret number in bold in the box
 
     //when guess is too high
