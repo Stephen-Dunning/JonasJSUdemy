@@ -21,3 +21,6 @@ const closeModal = function() {
 
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+//Lesson 81 Escape key event
+
