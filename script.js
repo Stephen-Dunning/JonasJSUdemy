@@ -19,6 +19,6 @@ btnRoll.addEventListener('click', function() {
 //let us geerate a randome dice roll
 
 // 2. display dice
-
+//difficult to get this done properly - must stop fibbing to everone.
 //check for rolled 1: if true, switch to next player
 })
