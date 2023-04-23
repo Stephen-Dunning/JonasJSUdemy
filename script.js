@@ -16,7 +16,7 @@ diceEl.classList.add('hidden');
 //rolling dice functionality
 btnRoll.addEventListener('click', function() {
 //1. generating a random dice roll
-
+//let us geerate a randome dice roll
 
 // 2. display dice
 
