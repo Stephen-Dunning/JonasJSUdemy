@@ -16,7 +16,8 @@ diceEl.classList.add('hidden');
 //rolling dice functionality
 btnRoll.addEventListener('click', function() {
 //1. generating a random dice roll
-//let us geerate a randome dice roll
+const dice = Math.trunc(Math.random() * 6) + 1;
+
 
 // 2. display dice
 //difficult to get this done properly - must stop fibbing to everone.
