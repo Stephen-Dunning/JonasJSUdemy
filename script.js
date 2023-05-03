@@ -21,6 +21,7 @@ const dice = Math.trunc(Math.random() * 6) + 1;
 
 // 2. display dice
 diceEl.classList.remove('hidden');
+diceEl.src = `dice-${dice}.png`;
 
 
 })
