@@ -20,6 +20,7 @@ const dice = Math.trunc(Math.random() * 6) + 1;
 
 
 // 2. display dice
-//difficult to get this done properly - must stop fibbing to everone.
-//check for rolled 1: if true, switch to next player
+diceEl.classList.remove('hidden');
+
+
 })
