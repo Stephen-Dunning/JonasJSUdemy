@@ -17,11 +17,15 @@ diceEl.classList.add('hidden');
 btnRoll.addEventListener('click', function() {
 //1. generating a random dice roll
 const dice = Math.trunc(Math.random() * 6) + 1;
-
+console.log(dice);
 
 // 2. display dice
 diceEl.classList.remove('hidden');
 diceEl.src = `dice-${dice}.png`;
 
+// 3. check the rolled dice
 
-})
+// add dice to the current score
+
+// switch to next player
+});
