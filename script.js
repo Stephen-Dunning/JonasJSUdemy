@@ -12,6 +12,7 @@ const btnHold = document.querySelector('.btn--hold');
 score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
+let currentScore = 0;
 
 //rolling dice functionality
 btnRoll.addEventListener('click', function() {
@@ -24,8 +25,12 @@ diceEl.classList.remove('hidden');
 diceEl.src = `dice-${dice}.png`;
 
 // 3. check the rolled dice
-
+if (dice !== 1) {
 // add dice to the current score
-
+  currentScore += dice;
+}
 // switch to next player
+
+
+
 });
